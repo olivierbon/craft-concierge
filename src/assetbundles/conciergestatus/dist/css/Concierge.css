@@ -1,0 +1,7 @@
+.conciergeCount {
+  line-height: 3em;
+}
+.conciergeCount strong{
+  font-size: 3em;
+  vertical-align: middle;
+}

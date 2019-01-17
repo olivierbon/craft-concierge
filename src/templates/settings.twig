@@ -1,0 +1,47 @@
+{% import "_includes/forms" as forms %}
+
+
+<p><strong>Configure messages</strong></p>
+<p>By default, concierge doesn't send emails out until you activate them below to give you some time to review the messages. <br>However, from now on, <u><strong>new users will all be switched to suspended</strong></u>.</p>
+<p>To customise your messages, go to the <a href="{{ url('settings/email/messages')}}">email messages section</a> and look for messages starting with <strong>Concierge</strong> (You should see 3 at the bottom of the page).</p>
+<hr>
+
+<p><strong>Messages delivery settings</strong></p>
+</p>
+{{  forms.lightswitchField({
+  label: '"Awaiting moderation" Message',
+  instructions: 'Send a holding email to the user.',
+  id : 'concierge_moderation_enabled',
+  name : 'concierge_moderation_enabled',
+  on: settings.concierge_moderation_enabled
+})
+}}
+
+{{  forms.lightswitchField({
+  label: '"Account Activated" message',
+  instructions: 'Send an email to the user once account is unsuspended',
+  id : 'concierge_activated_enabled',
+  name : 'concierge_activated_enabled',
+  on: settings.concierge_activated_enabled
+})
+}}
+{{  forms.lightswitchField({
+  label: '"Notification of new regitration" message',
+  instructions: 'Send a notification of new registration to admin/mod',
+  id : 'concierge_mod_notification_enabled',
+  name : 'concierge_mod_notification_enabled',
+  on: settings.concierge_mod_notification_enabled
+})
+}}
+<hr>
+
+<p><strong>Moderator Email Overide</strong></p>
+{{ forms.textField({
+  label:         "Email address"|t,
+  id:            'moderatorEmail',
+  name:          'moderatorEmail',
+  instructions:   'Moderator notification are sent to the admin email by default but you can overide this below.',
+  placeholder:   'moderator@somewhereelse.com',
+  value:         (settings.moderatorEmail ? settings.moderatorEmail),
+  errors:        settings.getErrors('moderatorEmail')
+}) }}

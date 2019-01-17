@@ -1,0 +1,12 @@
+{% if count >= 1 %}
+<div class="conciergeCount">
+  <strong>{{ count }}</strong>&nbsp; user{{ (count > 1 ) ? 's'}} awaiting moderation
+</div>
+<div class="buttons">
+  <a class="btn submit" href="{{ url('concierge') }}">{{ "Go activate"|t }}</a>
+</div>
+{% elseif count == 0 %}
+<p>
+  You do not have any pending registrations.
+</p>
+{% endif %}
