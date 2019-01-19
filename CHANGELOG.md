@@ -1,8 +1,4 @@
-# Concierge Changelog
-
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
+# Release Notes for Concierge 2.x
 
 ## 2.0.0 - 2019-01-17
 - Initial release
