@@ -1,5 +1,5 @@
 {
-    "name": "ob/craft-concierge",
+    "name": "olivierbon/craft-concierge",
     "description": "Simple user moderation plugin for Craft",
     "type": "craft-plugin",
     "version": "2.0.0",
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-          "ob\\concierge\\": "src/"
+          "olivierbon\\concierge\\": "src/"
         }
     },
     "extra": {
         "name": "Concierge",
         "handle": "concierge",
-        "class": "ob\\concierge\\Concierge"
+        "class": "olivierbon\\concierge\\Concierge"
     }
 }

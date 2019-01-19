@@ -1,6 +1,6 @@
 <?php
 
-namespace ob\concierge\assetbundles\conciergestatus;
+namespace olivierbon\concierge\assetbundles\conciergestatus;
 
 use Craft;
 use craft\web\AssetBundle;
@@ -24,7 +24,7 @@ class ConciergeStatusAsset extends AssetBundle
      */
     public function init()
     {
-        $this->sourcePath = "@ob/concierge/assetbundles/conciergestatus/dist";
+        $this->sourcePath = "@olivierbon/concierge/assetbundles/conciergestatus/dist";
 
         $this->depends = [
             CpAsset::class,

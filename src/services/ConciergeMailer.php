@@ -1,6 +1,6 @@
 <?php
 
-namespace ob\concierge\services;
+namespace olivierbon\concierge\services;
 
 use Craft;
 use craft\elements\User;
@@ -21,7 +21,7 @@ class ConciergeMailer extends Component
 
     public function __construct()
     {
-        $this->settings = \ob\concierge\Concierge::getInstance()->getSettings();
+        $this->settings = \olivierbon\concierge\Concierge::getInstance()->getSettings();
     }
 
     public function sendAwaitingModerationEmail(User $user)
