@@ -16,7 +16,7 @@
         "docs": "http://concierge.olivierbon.com/documentation/",
         "issues": "http://concierge.olivierbon.com"
     },
-    "license": "CRAFT",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Olivier Bon",
@@ -25,6 +25,7 @@
         }
     ],
     "require": {
+        "php": ">=7.0.0",
         "craftcms/cms": "^3.0.0-RC1"
     },
     "autoload": {
