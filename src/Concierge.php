@@ -1,6 +1,6 @@
 <?php
 
-namespace ob\concierge;
+namespace olivierbon\concierge;
 
 use Craft;
 use craft\events\PluginEvent;
@@ -12,7 +12,7 @@ use craft\services\Plugins;
 use craft\services\SystemMessages;
 use craft\services\Users;
 use craft\web\Request;
-use ob\concierge\models\Settings;
+use olivierbon\concierge\models\Settings;
 use yii\base\Event;
 
 /**
@@ -53,7 +53,7 @@ class Concierge extends \craft\base\Plugin
 
         // Registers the ConciergeMailer service so it's available
         $this->setComponents([
-            'mailer' => \ob\concierge\services\ConciergeMailer::class,
+            'mailer' => \olivierbon\concierge\services\ConciergeMailer::class,
         ]);
 
         // Registers the Concierge Status Widget
@@ -139,7 +139,7 @@ class Concierge extends \craft\base\Plugin
             Dashboard::class,
             Dashboard::EVENT_REGISTER_WIDGET_TYPES,
             function (RegisterComponentTypesEvent $event) {
-                $event->types[] = \ob\concierge\widgets\ConciergeStatus::class;
+                $event->types[] = \olivierbon\concierge\widgets\ConciergeStatus::class;
             }
         );
     }

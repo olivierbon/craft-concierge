@@ -1,6 +1,6 @@
 <?php
 
-namespace ob\concierge\models;
+namespace olivierbon\concierge\models;
 
 use craft\base\Model;
 

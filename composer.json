@@ -1,5 +1,5 @@
 {
-    "name": "ob/craft-concierge",
+    "name": "olivierbon/craft-concierge",
     "description": "Simple user moderation plugin for Craft",
     "type": "craft-plugin",
     "version": "2.0.0",
@@ -16,7 +16,7 @@
         "docs": "http://concierge.olivierbon.com/documentation/",
         "issues": "http://concierge.olivierbon.com"
     },
-    "license": "CRAFT",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Olivier Bon",
@@ -25,16 +25,17 @@
         }
     ],
     "require": {
+        "php": ">=7.0.0",
         "craftcms/cms": "^3.0.0-RC1"
     },
     "autoload": {
         "psr-4": {
-          "ob\\concierge\\": "src/"
+          "olivierbon\\concierge\\": "src/"
         }
     },
     "extra": {
         "name": "Concierge",
         "handle": "concierge",
-        "class": "ob\\concierge\\Concierge"
+        "class": "olivierbon\\concierge\\Concierge"
     }
 }

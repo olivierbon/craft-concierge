@@ -1,12 +1,12 @@
 <?php
 
-namespace ob\concierge\widgets;
+namespace olivierbon\concierge\widgets;
 
 use Craft;
 use craft\base\Widget;
 use craft\elements\User;
-use ob\concierge\Concierge;
-use ob\concierge\assetbundles\conciergestatus\ConciergeStatusAsset;
+use olivierbon\concierge\Concierge;
+use olivierbon\concierge\assetbundles\conciergestatus\ConciergeStatusAsset;
 
 /**
  * ConciergeStatus Class 
@@ -35,7 +35,7 @@ class ConciergeStatus extends Widget
      */
     public static function iconPath()
     {
-        return Craft::getAlias("@ob/concierge/assetbundles/conciergestatus/dist/img/Concierge-icon.svg");
+        return Craft::getAlias("@olivierbon/concierge/assetbundles/conciergestatus/dist/img/Concierge-icon.svg");
     }
 
     /**
