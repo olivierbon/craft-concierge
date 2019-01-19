@@ -1,5 +1,5 @@
 {% extends "_layouts/cp" %}
-{% set title = 'Awaiting activation' %}
+{% set title = 'Awaiting activation'|t('concierge') %}
 {% set elementType = 'craft\\elements\\User' %}
 {% set elementInstance = craft.app.elements.createElement(elementType) %}
 {% set context = 'index' %}
@@ -7,7 +7,7 @@
 {% set sources = craft.app.elementIndexes.getSources(elementType, 'index') %}
 
 {% block actionButton %}
-    <a class="btn icon settings" href="{{ url('settings/plugins/concierge') }}">{{ "Settings"|t }}</a>
+    <a class="btn icon settings" href="{{ url('settings/plugins/concierge') }}">{{ "Concierge Settings"|t('concierge') }}</a>
 {% endblock %}
 
 {% block sidebar %}
