@@ -7,7 +7,7 @@
 {% set sources = craft.app.elementIndexes.getSources(elementType, 'index') %}
 
 {% block actionButton %}
-    <a class="btn icon settings" href="{{ url('settings/plugins/concierge') }}">{{ "Settings"|t }}</a>
+    <a class="btn icon settings" href="{{ url('settings/plugins/concierge') }}">{{ "Settings"|t('concierge') }}</a>
 {% endblock %}
 
 {% block sidebar %}
