@@ -1,5 +1,5 @@
 {
-    "name": "ob/concierge",
+    "name": "ob/craft-concierge",
     "description": "Simple user moderation plugin for Craft",
     "type": "craft-plugin",
     "version": "2.0.0",
@@ -20,7 +20,8 @@
     "authors": [
         {
             "name": "Olivier Bon",
-            "homepage": "http://olivierbon.com"
+            "homepage": "http://olivierbon.com",
+            "email": "help@olivierbon.com"
         }
     ],
     "require": {
