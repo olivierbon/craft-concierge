@@ -19,7 +19,7 @@ return [
     'Send a holding email to the user' => 'Send a holding email to the user',
     '"Account Activated" message' => '"Account Activated" message',
     'Send an email to the user once account is unsuspended' => 'Send an email to the user once account is unsuspended',
-    '"Notification of new regitration" message' => '"Notification of new regitration" message',
+    '"Notification of new registration" message' => '"Notification of new regitration" message',
     'Send a notification of new registration to admin/mod' => 'Send a notification of new registration to admin/mod',
     'Moderator Email Overide' => 'Moderator Email Overide',
     'Email address' => 'Email address',
