@@ -36,9 +36,9 @@ return [
 
     /* Holding message to user */
     'concierge_moderation_heading' => 'Concierge - Awaiting moderation Message (to user only):',
-    'concierge_moderation_subject' => 'Your registration was successfull',
+    'concierge_moderation_subject' => 'Your registration was successful',
     'concierge_moderation_body' => "Hey {{user.friendlyName}},\n\n" .
-    "Thanks for creating an account with {{siteName}}! Your registration was successfull. An administrator will activate your account soon and a confirmation email will be sent to you.\n\n",
+    "Thanks for creating an account with {{siteName}}! Your registration was successful. An administrator will activate your account soon and a confirmation email will be sent to you.\n\n",
     /* User Actived to user */
     'concierge_activated_heading' => 'Concierge - Account Activated message (to user only):',
     'concierge_activated_subject' => 'Your account has been activated',
