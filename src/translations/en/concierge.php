@@ -19,7 +19,7 @@ return [
     'Send a holding email to the user' => 'Send a holding email to the user',
     '"Account Activated" message' => '"Account Activated" message',
     'Send an email to the user once account is unsuspended' => 'Send an email to the user once account is unsuspended',
-    '"Notification of new registration" message' => '"Notification of new regitration" message',
+    '"Notification of new registration" message' => '"Notification of new registration" message',
     'Send a notification of new registration to admin/mod' => 'Send a notification of new registration to admin/mod',
     'Moderator Email Overide' => 'Moderator Email Overide',
     'Email address' => 'Email address',
@@ -45,7 +45,7 @@ return [
     'concierge_activated_body' => "Hey {{user.friendlyName}},\n\n" .
     "Thanks again for creating an account with {{siteName}}! Your account has been activated and is now ready for use. \n\n",
     /* User registration email to admin/moderator */
-    'concierge_mod_notification_heading' => 'Concierge - Notification of new regitration (to mods/admin only):',
+    'concierge_mod_notification_heading' => 'Concierge - Notification of new registration (to mods/admin only):',
     'concierge_mod_notification_subject' => 'New registration on {{siteName}}',
     'concierge_mod_notification_body' => "Hey,\n\n" .
     "Someone registered on {{siteName}} and the account is awaiting unsuspention. \n\n" .
