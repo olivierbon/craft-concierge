@@ -1,4 +1,4 @@
-{% extends "_layouts/cp" %}
+{% extends "_layouts/elementindex" %}
 {% set title = 'Awaiting activation'|t('concierge') %}
 {% set elementType = 'craft\\elements\\User' %}
 {% set elementInstance = craft.app.elements.createElement(elementType) %}
@@ -9,32 +9,3 @@
 {% block actionButton %}
     <a class="btn icon settings" href="{{ url('settings/plugins/concierge') }}">{{ "Concierge Settings"|t('concierge') }}</a>
 {% endblock %}
-
-{% block sidebar %}
-    {% if sources is not empty %}
-        <nav>
-            {% include "_elements/sources" %}
-        </nav>
-    {% endif %}
-{% endblock %}
-
-{% block content %}
-    <div class="elementindex">
-        {% include "_elements/indexcontainer" with {
-            showSiteMenu: false
-        } %}
-    </div>
-{% endblock %}
-
-
-{% block initJs %}
-    Craft.elementIndex = Craft.createElementIndex('{{ elementType|e("js") }}', $('#main'), {
-        context:        '{{ context }}',
-        storageKey:     'elementindex.{{ elementType|e("js") }}',
-        criteria:       {"status":'suspended',
-        "enabledForSite": null,
-        "lastLoginDate":":empty:"},
-    });
-{% endblock %}
-
-{% js block('initJs') %}

@@ -2,7 +2,7 @@
     "name": "olivierbon/craft-concierge",
     "description": "Simple user moderation plugin for Craft",
     "type": "craft-plugin",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "keywords": [
         "craft",
         "cms",
@@ -26,7 +26,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "craftcms/cms": "^3.0.0-RC1"
+        "craftcms/cms": "^3.4.0-RC1"
     },
     "autoload": {
         "psr-4": {
