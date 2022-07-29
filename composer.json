@@ -37,5 +37,16 @@
         "name": "Concierge",
         "handle": "concierge",
         "class": "olivierbon\\concierge\\Concierge"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "craftcms/rector": "dev-main"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }

@@ -41,7 +41,7 @@ class ConciergeStatus extends Widget
     /**
      * @inheritdoc
      */
-    public static function maxColspan()
+    public static function maxColspan(): ?int
     {
         return null;
     }
@@ -52,7 +52,7 @@ class ConciergeStatus extends Widget
     /**
      * @inheritdoc
      */
-    public function getBodyHtml()
+    public function getBodyHtml(): ?string
     {
         Craft::$app->getView()->registerAssetBundle(ConciergeStatusAsset::class);
 
